@@ -1,0 +1,31 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    position: relative;
+    color: #A63434;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #A63434;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover::before {
+    visibility: visible;
+    width: 100%;
+}
